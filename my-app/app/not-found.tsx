@@ -8,9 +8,7 @@ export default function NotFound() {
         • 404 · LESSON OR COURSE NOT FOUND
       </span>
 
-      <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
-        Curriculum path not located
-      </h1>
+
 
       <p className="text-sm text-slate-500 leading-relaxed">
         The requested syllabus module or lesson could not be resolved in the curriculum directory.
