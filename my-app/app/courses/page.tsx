@@ -41,11 +41,10 @@ export default function CourseCatalogPage() {
           <button
             key={tab}
             onClick={() => setActiveFilter(tab)}
-            className={`text-xs font-medium px-4 py-2 rounded-md transition border ${
-              activeFilter === tab
-                ? "bg-blue-600 text-white border-blue-600 shadow-sm"
-                : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
-            }`}
+            className={`text-xs font-medium px-4 py-2 rounded-md transition border ${activeFilter === tab
+              ? "bg-blue-600 text-white border-blue-600 shadow-sm"
+              : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
+              }`}
           >
             {tab}
           </button>
