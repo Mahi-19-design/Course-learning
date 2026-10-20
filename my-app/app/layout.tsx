@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "LearnSpace - Academic Minimalist Curriculum Engine",
-  description: "Disciplined academic minimalist curriculum engine for modern software engineering.",
+  description: "Disciplined academic minimalist curriculum engine for software engineering.",
 };
 
 export default function RootLayout({
