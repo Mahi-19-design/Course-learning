@@ -85,7 +85,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Right Info Box */}
+
         <div className="bg-white border border-slate-200 rounded-lg p-5 space-y-4 shadow-sm">
           <div className="flex items-center justify-between text-xs border-b border-slate-100 pb-3">
             <span className="font-bold text-slate-700">Curriculum Structure</span>
