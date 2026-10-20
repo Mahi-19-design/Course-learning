@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="border-b border-slate-200 bg-white sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo & Search */}
+
         <div className="flex items-center gap-6">
           <Link href="/courses" className="text-xl font-bold text-blue-600 tracking-tight">
             LearnSpace
@@ -40,9 +40,8 @@ export default function Navbar() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-medium pb-5 pt-5 transition relative ${
-                    isActive ? "text-slate-900 font-semibold" : "text-slate-500 hover:text-slate-800"
-                  }`}
+                  className={`text-sm font-medium pb-5 pt-5 transition relative ${isActive ? "text-slate-900 font-semibold" : "text-slate-500 hover:text-slate-800"
+                    }`}
                 >
                   {link.label}
                   {isActive && (

@@ -35,7 +35,7 @@ export default function LessonChecklist() {
             <input
               type="checkbox"
               checked={!!checked[idx]}
-              onChange={() => {}}
+              onChange={() => { }}
               className="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500"
             />
             <span className={checked[idx] ? "line-through text-slate-400" : ""}>{item}</span>
