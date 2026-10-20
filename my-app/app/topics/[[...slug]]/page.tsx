@@ -101,11 +101,10 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
             (tab, i) => (
               <button
                 key={tab}
-                className={`px-3 py-1.5 rounded border ${
-                  i === 0
+                className={`px-3 py-1.5 rounded border ${i === 0
                     ? "bg-blue-600 text-white border-blue-600 font-medium"
                     : "bg-white text-slate-600 border-slate-200 hover:bg-slate-50"
-                }`}
+                  }`}
               >
                 {tab}
               </button>
