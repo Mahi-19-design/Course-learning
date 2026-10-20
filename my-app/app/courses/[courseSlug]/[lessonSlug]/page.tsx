@@ -23,7 +23,7 @@ interface PageProps {
 export default async function LessonViewPage({ params }: PageProps) {
   const { courseSlug, lessonSlug } = await params;
   const course = courses.find((c) => c.slug === courseSlug);
-  
+
   if (!course) {
     notFound();
   }
@@ -222,7 +222,7 @@ export default async function LessonViewPage({ params }: PageProps) {
                 <span>TypeScript</span>
               </div>
               <pre className="p-4 overflow-x-auto leading-relaxed">
-{`// app/blog/[...slug]/page.tsx
+                {`// app/blog/[...slug]/page.tsx
 export default async function BlogPost({
   params,
 }: {
