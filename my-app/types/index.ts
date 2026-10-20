@@ -1,14 +1,14 @@
 // types/index.ts
 
 export interface Lesson {
-  id: string; // e.g. "04"
-  slug: string; // "lesson-04"
+  id: string;
+  slug: string;
   title: string;
   summary: string;
   durationMinutes: number;
-  readTime: string; // "6 min read"
+  readTime: string;
   codeAvailable: boolean;
-  nextJsVersion: string; // "Updated for Next.js 15+"
+  nextJsVersion: string;
   singleSegmentCode?: string;
   catchAllCode?: string;
   codeSnippet?: string;
@@ -17,7 +17,7 @@ export interface Lesson {
 }
 
 export interface Module {
-  id: number; // 1, 2, 3, 4
+  id: number;
   title: string;
   lessonsCount: number;
   durationMinutes: number;
@@ -27,9 +27,9 @@ export interface Module {
 
 export interface Course {
   id: string;
-  slug: string; // "nextjs-app-router-fundamentals"
+  slug: string;
   title: string;
-  category: "Frontend" | "Backend" | "Architecture" | "Fundamentals" | "Language" | "Database";
+  category: "Frontend" | "Backend" | "Architecture" | "Language" | "Database";
   difficulty: "Beginner" | "Intermediate" | "Advanced";
   instructor: string;
   instructorRole: string;
@@ -38,17 +38,17 @@ export interface Course {
   lessonsCount: number;
   estimatedHours: number;
   openAccess: boolean;
-  versionTag: string; // "v14.2 / stable"
+  versionTag: string;
   modules: Module[];
 }
 
 export interface TopicModule {
-  moduleNumber: string; // "Module 01"
+  moduleNumber: string;
   title: string;
   lessonsCount: number;
   difficulty: string;
   instructor: string;
   instructorRole: string;
   instructorInitials: string;
-  slug: string; // "/courses/nextjs-app-router-fundamentals"
+  slug: string;
 }
