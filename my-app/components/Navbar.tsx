@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 "use client";
 
 import Link from "next/link";
@@ -23,9 +22,7 @@ export default function Navbar() {
           </Link>
 
           <div className="relative hidden md:block w-72">
-            <span className="absolute inset-y-0 left-3 flex items-center text-slate-400 text-xs">
-              🔍
-            </span>
+            
             <input
               type="text"
               placeholder="Search curriculum index..."
@@ -53,14 +50,8 @@ export default function Navbar() {
           </nav>
         </div>
 
-        {/* Right Actions */}
-        <div className="flex items-center gap-4 text-slate-500 text-sm">
-          <button className="hover:text-slate-800 text-base" title="Notifications">
-            🔔
-          </button>
-          <button className="hover:text-slate-800 text-base" title="Help">
-            ❔
-          </button>
+             <div className="flex items-center gap-4 text-slate-500 text-sm">
+        
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs px-3.5 py-1.5 rounded-md transition shadow-sm">
             Sign In
           </button>
