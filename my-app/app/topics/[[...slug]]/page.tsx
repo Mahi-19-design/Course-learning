@@ -1,4 +1,3 @@
-// app/topics/[[...slug]]/page.tsx
 import Link from "next/link";
 import { reactTopicModules } from "@/data/coursesData";
 
@@ -16,11 +15,9 @@ interface PageProps {
 
 export default async function TopicsCatchAllPage({ params }: PageProps) {
   const { slug } = await params;
-  const currentPath = slug && slug.length > 0 ? `/topics/${slug.join("/")}` : "/topics";
-
+  
   return (
     <div className="space-y-6">
-      {/* Top Special Banner Demonstrating Optional Catch-All */}
       <div className="bg-slate-900 text-white text-xs px-4 py-2.5 rounded-lg flex items-center justify-between font-mono shadow-sm">
         <div className="flex items-center gap-2">
           <span className="text-blue-400">⚡ Route pattern:</span>
@@ -38,7 +35,6 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Breadcrumb Bar */}
       <div className="flex items-center justify-between text-xs text-slate-400">
         <div className="flex items-center gap-2">
           <Link href="/courses" className="text-blue-600 hover:underline">
@@ -53,13 +49,12 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
         </div>
         <div className="flex items-center gap-2">
           <span className="text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded text-2xs font-semibold">
-            ● Curriculum Track 2025
+             Curriculum Track 2025
           </span>
           <span>4 Modules Available</span>
         </div>
       </div>
 
-      {/* Specialized Domain Track Hero */}
       <div className="bg-white border border-slate-200 rounded-lg p-8 space-y-6 shadow-sm">
         <div className="space-y-2">
           <span className="text-xs font-mono font-bold text-blue-600 uppercase tracking-wider">
@@ -73,7 +68,6 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
           </p>
         </div>
 
-        {/* 4 Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4 border-t border-slate-100 text-xs">
           <div>
             <p className="text-slate-400 font-medium">Total Content</p>
@@ -94,7 +88,6 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Subcategory Filter Tabs */}
       <div className="flex items-center justify-between text-xs">
         <div className="flex gap-2">
           {["All React", "Server Components", "State & Signals", "Routing Architecture"].map(
@@ -114,7 +107,6 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
         <span className="text-slate-400">Sorted by Curriculum Sequence</span>
       </div>
 
-      {/* 4 Module Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {reactTopicModules.map((mod) => (
           <div
@@ -166,7 +158,6 @@ export default async function TopicsCatchAllPage({ params }: PageProps) {
         ))}
       </div>
 
-      {/* Related Learning Paths */}
       <div className="space-y-3 pt-4 border-t border-slate-200">
         <div className="flex justify-between items-center text-xs">
           <h4 className="font-bold text-slate-900">Related Learning Paths</h4>
