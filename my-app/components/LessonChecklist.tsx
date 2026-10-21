@@ -1,4 +1,3 @@
-// components/LessonChecklist.tsx
 "use client";
 
 import { useState } from "react";
@@ -23,7 +22,7 @@ export default function LessonChecklist() {
   return (
     <div className="border border-slate-200 rounded-lg p-5 space-y-3 bg-white">
       <h3 className="text-xs font-bold text-slate-900 flex items-center gap-2">
-        <span>📋</span> Self-Assessment Checklist
+       > Self-Assessment Checklist
       </h3>
       <div className="space-y-2 text-xs text-slate-700">
         {items.map((item, idx) => (
