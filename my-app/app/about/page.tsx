@@ -1,10 +1,8 @@
-// app/about/page.tsx
 import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <div className="max-w-4xl space-y-6">
-      {/* Breadcrumb */}
       <div className="text-xs text-slate-400 flex items-center gap-2">
         <Link href="/courses" className="hover:text-slate-700">
           Home
