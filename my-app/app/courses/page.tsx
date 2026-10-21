@@ -1,4 +1,4 @@
-// app/courses/page.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -17,14 +17,12 @@ export default function CourseCatalogPage() {
 
   return (
     <div className="space-y-8">
-      {/* Breadcrumb */}
       <div className="text-xs text-slate-400 flex items-center gap-2">
         <span>Index</span>
         <span>/</span>
         <span className="text-slate-700 font-medium">Courses</span>
       </div>
 
-      {/* Header */}
       <div className="space-y-2">
         <span className="text-xs font-mono font-medium text-blue-600 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
           CURRICULUM DIRECTORY 2025
@@ -35,7 +33,6 @@ export default function CourseCatalogPage() {
         </p>
       </div>
 
-      {/* Filter Tabs */}
       <div className="flex flex-wrap gap-2 pt-1">
         {filterTabs.map((tab) => (
           <button
@@ -51,7 +48,6 @@ export default function CourseCatalogPage() {
         ))}
       </div>
 
-      {/* Stats 4-Column Banner */}
       <div className="bg-white border border-slate-200 rounded-lg p-5 grid grid-cols-2 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-100 shadow-sm">
         <div className="pt-2 md:pt-0">
           <p className="text-xs text-slate-400 font-medium">Published Tracks</p>
@@ -74,7 +70,6 @@ export default function CourseCatalogPage() {
         </div>
       </div>
 
-      {/* Course Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCourses.map((course) => (
           <div
@@ -107,7 +102,7 @@ export default function CourseCatalogPage() {
 
             <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
               <span className="text-slate-500 flex items-center gap-1">
-                📖 {course.lessonsCount} Lessons
+                 {course.lessonsCount} Lessons
               </span>
               <Link
                 href={`/courses/${course.slug}`}
@@ -120,7 +115,6 @@ export default function CourseCatalogPage() {
         ))}
       </div>
 
-      {/* Curriculum Sequencing Engine Callout */}
       <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
           <h4 className="text-sm font-bold text-slate-900">Curriculum Sequencing Engine</h4>
