@@ -1,4 +1,3 @@
-// app/courses/[courseSlug]/page.tsx
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { courses } from "@/data/coursesData";
@@ -23,7 +22,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
   return (
     <div className="space-y-8">
-      {/* Breadcrumb Bar */}
       <div className="flex items-center justify-between text-xs text-slate-400">
         <div className="flex items-center gap-2">
           <Link href="/courses" className="hover:text-slate-700">
@@ -33,13 +31,11 @@ export default async function CourseDetailPage({ params }: PageProps) {
           <span className="text-slate-800 font-medium">{course.title}</span>
         </div>
         <Link href="/courses" className="hover:text-slate-700 flex items-center gap-1">
-          ← Back to courses
+           Back to courses
         </Link>
       </div>
 
-      {/* Hero & Structure Side-by-Side */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        {/* Main Info */}
         <div className="lg:col-span-2 space-y-4">
           <div className="flex items-center gap-2 text-xs">
             <span className="bg-slate-100 border border-slate-200 text-slate-700 px-2 py-0.5 rounded font-medium">
@@ -95,7 +91,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
           <div className="space-y-3 text-xs">
             <div>
               <p className="font-bold text-slate-800 flex items-center gap-1.5">
-                🌐 Zero Dependencies
+                Zero Dependencies
               </p>
               <p className="text-slate-500 mt-0.5">
                 Self-contained browser sandboxes and local execution paths.
@@ -103,7 +99,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </div>
             <div>
               <p className="font-bold text-slate-800 flex items-center gap-1.5">
-                💻 Code-Centric Pedagogy
+                 Code-Centric Pedagogy
               </p>
               <p className="text-slate-500 mt-0.5">
                 Structured architecture blueprints and source comparisons.
@@ -111,7 +107,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
             </div>
             <div>
               <p className="font-bold text-slate-800 flex items-center gap-1.5">
-                🛡️ Production Auditing
+                 Production Auditing
               </p>
               <p className="text-slate-500 mt-0.5">
                 Includes cache profiling and server mutation boundaries.
@@ -126,7 +122,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Course Curriculum Accordion */}
       <div className="space-y-4 pt-4 border-t border-slate-200">
         <div className="flex items-center justify-between">
           <div>
